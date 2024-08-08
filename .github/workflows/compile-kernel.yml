@@ -36,6 +36,11 @@ on:
         required: false
         default: true
         type: boolean
+      auto_patch:
+        description: "add"
+        required: false
+        default: "true"
+        type: boolean
       kernel_package:
         description: "Select compile package list"
         required: false
@@ -75,13 +80,6 @@ on:
         options:
           - -ophub
           - -yourname
-      auto_patch:
-        description: "You can set the configuration file for the compiled kernel to be stored in your repository"
-        required: false
-        default: "false"
-        type: boolean
-        
-
 env:
   TZ: America/New_York
 
